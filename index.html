@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Maths Quizz</title>
 </head>
+
 <body>
-    <h1>Maths Quizz</h1>
-    <div class="question-area">
-        <span id="operand1">0</span>
-        <span id="operator">x</span>
-        <span id="operand2">0</span>
-        <span>=</span>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/maths-quizz-logo.webp" alt="logo"> Maths Quizz
+    </h1>
+    <div class="game-area">
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
 
-        <p class="answer-message">Enter Answer:</p>
+            <p class="answer-message">Enter Answer:</p>
 
-        <label for="answer-box">Answer box </label>
-        <input id="answer-box" type="number">
+            <label for="answer-box"></label>
+            <input id="answer-box" type="number">
+        </div>
+
+        <button data-type="submit" class="answer-button">Submit Answer</button>
+
     </div>
-
-    <button data-type="submit" class="answer-button">Submit Answer</button>
 
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
 
     </div>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
