@@ -1,1 +1,35 @@
-console.log("checking files connected");
+function runGame() {
+    
+}
+
+checkAnswer() {
+
+}
+
+calculateCorrectAnswer() {
+
+}
+
+incrementScore() {
+
+}
+
+incrementWrongAnswer() {
+
+}
+
+displayAdditionQuestion() {
+
+}
+
+displaySubtractQuestion() {
+
+}
+
+displayMultiplyQuestion() {
+
+}
+
+displayDivisionQuestion() {
+
+}

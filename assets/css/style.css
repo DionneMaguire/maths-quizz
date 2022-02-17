@@ -75,3 +75,12 @@ body {
     display: inline-block;
     padding: 25px;
 }
+
+.answer-button {
+    width: 220px;
+    height: 60px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+}
