@@ -46,9 +46,6 @@ function runGame(gameType) {
     let numSign = Math.floor(Math.random() * 4);
     let signs = ["+", "-", "*", "/"];
     let signPicked = signs[numSign];
-    
-    //testing making it be division
-    signPicked = "/";
 
     if (signPicked === "+") {
         displayAdditionQuestion(num1, num2);
