@@ -30,13 +30,15 @@ function runGame(gameType) {
     let signs = ["+", "-", "*", "/"];
     let signPicked = signs[numSign];
     
-    //testing making it be additon
-    signPicked = "*";
+    //testing making it be subtract
+    signPicked = "-";
 
     if (signPicked === "+") {
         displayAdditionQuestion(num1, num2);
     } else if (signPicked === "*") {
-        displayMultiplyQuestion(num1,  num2);
+        displayMultiplyQuestion(num1, num2);
+    } else if (signPicked === "-") {
+        displaySubtractQuestion(num1, num2);
     } else {
         alert(`Unknown operator: ${signPicked}`);
         throw `Unknown operator: ${signPicked}.Aborting!`;
@@ -77,6 +79,8 @@ function calculateCorrectAnswer() {
         return [operand1 + operand2, "addition"];
     } else if (operator === "*") {
         return [operand1 * operand2, "multiply"];
+    } else if (operator === "-") {
+        return [operand1 - operand2, "subtract"];
     } else {
         alert(`Unimplemented operator ${operator}`);
         throw `Unimplemented operator ${operator}. Aborting!`;
@@ -111,7 +115,10 @@ function displayAdditionQuestion(operand1, operand2) {
     document.getElementById('operator').textContent = "+";
 }
 
-function displaySubtractQuestion() {
+function displaySubtractQuestion(operand1, operand2) {
+    document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
+    document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
+    document.getElementById('operator').textContent = "-";
 
 }
 
