@@ -18,6 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
  * and after the user's answer has been processed
  */
 function runGame(gameType) {
+
+    //each time function is called it will set the value
+    //of our answer box to an empty string
+
+    document.getElementById("answer-box").value = "";
+
+    //that the cursor will be in the answer box when page is loaded
+
+    document.getElementById("answer-box").focus();
     
     //creates 2 random numbers between 1 and 10 
     //for question
