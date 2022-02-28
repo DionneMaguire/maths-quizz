@@ -75,13 +75,8 @@ function checkAnswer() {
         alert("Hey! You got it right :D!");
         incrementScore();
     } else {
-        console.log(userAnswer);
-        if (userAnswer.length === 0) {
-            alert("You forgot to enter a value!");
-        } else {
         alert(`Awww... you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
         incrementWrongAnswer();
-        }
     }
     runGame(calculatedAnswer[1]);
 
