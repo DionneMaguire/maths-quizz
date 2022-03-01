@@ -63,10 +63,19 @@ function runGame(gameType) {
 }
 
 /**
-*Checks the answer against the first element in
-* the returned calculateCorrectAnswer
+ *Checks the answer against the first element in
+ * the returned calculateCorrectAnswer
  */
 function checkAnswer() {
+    //start timer first time and check for times up
+    let currentTime = parseInt(document.getElementById("countdown").innerHTML);
+    console.log(currentTime);
+    if (currentTime === 30) {
+        startTimer();
+    } else if (currentTime < 0) {
+        displayResults();
+    }
+
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
@@ -149,4 +158,19 @@ function displayDivisionQuestion(operand1, operand2) {
     document.getElementById('operand2').textContent = operand1;
     document.getElementById('operator').textContent = "/";
 
+}
+
+function startTimer() {
+    const startingSeconds = 30;
+    let time = startingSeconds;
+
+    const countdownEl = document.getElementById('countdown');
+
+    setInterval(updateCountdown, 1000);
+
+    function updateCountdown() {
+        countdownEl.innerHTML = `${time}`;
+
+        time--;
+    }
 }
