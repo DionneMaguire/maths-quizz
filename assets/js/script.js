@@ -169,8 +169,24 @@ function startTimer() {
     setInterval(updateCountdown, 1000);
 
     function updateCountdown() {
+        
         countdownEl.innerHTML = `${time}`;
+
+        if (time < 0) {
+            displayResults();
+        }
 
         time--;
     }
+}
+
+function displayResults() {
+    let finalCorrect = parseInt(document.getElementById("score").innerText);
+    let finalIncorrect = parseInt(document.getElementById("incorrect").innerText);
+    console.log(finalCorrect);
+    console.log(finalIncorrect);
+    document.getElementById("final-score").innerHTML = finalCorrect;
+    document.getElementById("final-incorrect").innerHTML = finalIncorrect;
+    alert("game ended!");
+
 }
