@@ -1,5 +1,14 @@
 //* wait for the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function () {
+    // 
+    let start = document.getElementById("start");
+    let intro = document.getElementById("intro");
+    start.addEventListener("click", function() {
+        intro.style.display = "none";
+        startTime();
+
+    })
+    // when user hits the submit answer button it will check answer
     let buttons = document.getElementsByTagName("button");
     console.log(buttons);
     for (let button of buttons) {
@@ -62,11 +71,7 @@ function runGame(gameType) {
 
 }
 
-/**
- *Checks the answer against the first element in
- * the returned calculateCorrectAnswer
- */
-function checkAnswer() {
+function startTime() {
     //check whether this is first time thru and if it is start the timer
     let seconds = parseInt(document.getElementById("timer").innerHTML);
     //console.log(seconds);
@@ -78,7 +83,13 @@ function checkAnswer() {
         alert("Time's up!");
 
     }, 30000);
-
+}
+/**
+ *Checks the answer against the first element in
+ * the returned calculateCorrectAnswer
+ */
+function checkAnswer() {
+    
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
