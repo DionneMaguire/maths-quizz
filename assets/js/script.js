@@ -9,17 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
     // when user hits the submit answer button it will check answer
-    let buttons = document.getElementsByTagName("button");
-    console.log(buttons);
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                alert("there is a problem!!");
-            }
-        })
-    }
+    let answer = document.getElementById("answer-button");
+    answer.addEventListener("click", function () {
+        checkAnswer();
+    })
 
     // if the user hits enter it will check answer
 
