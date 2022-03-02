@@ -67,13 +67,13 @@ function runGame(gameType) {
 function startTime() {
     //check whether this is first time thru and if it is start the timer
     let seconds = parseInt(document.getElementById("timer").innerHTML);
-    //console.log(seconds);
     if (seconds === 30) {
         timeLeft(seconds);
     }
     setTimeout(function() {
         console.log("in timeout");
         alert("Time's up!");
+        displayResults();
 
     }, 30000);
 }
@@ -173,19 +173,23 @@ function timeLeft(seconds) {
         seconds--;
         if (seconds === -1) {
             console.log("game over");
+            clearInterval(countDown);
         }
     }, 1000);
 }
 
 function displayResults() {
-    displayResults.style.display = "block";
+    console.log("in display results");
+    let results = document.getElementById("results");
+    
     let finalCorrect = parseInt(document.getElementById("score").innerText);
     let finalIncorrect = parseInt(document.getElementById("incorrect").innerText);
     console.log(finalCorrect);
     console.log(finalIncorrect);
     document.getElementById("final-score").innerHTML = finalCorrect;
     document.getElementById("final-incorrect").innerHTML = finalIncorrect;
-    alert("game ended!");
+    results.style.display = "block";
+    
     reset();
 
 }
