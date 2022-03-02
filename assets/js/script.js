@@ -67,14 +67,17 @@ function runGame(gameType) {
  * the returned calculateCorrectAnswer
  */
 function checkAnswer() {
-    //start timer first time and check for times up
-    let currentTime = parseInt(document.getElementById("countdown").innerHTML);
-    console.log(currentTime);
-    if (currentTime === 30) {
-        startTimer();
-    } else if (currentTime < 0) {
-        displayResults();
+    //check whether this is first time thru and if it is start the timer
+    let seconds = parseInt(document.getElementById("timer").innerHTML);
+    //console.log(seconds);
+    if (seconds === 30) {
+        timeLeft(seconds);
     }
+    setTimeout(function() {
+        console.log("in timeout");
+        alert("Time's up!");
+
+    }, 30000);
 
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let calculatedAnswer = calculateCorrectAnswer();
@@ -121,7 +124,6 @@ function calculateCorrectAnswer() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    console.log(oldScore);
 
 }
 
@@ -160,27 +162,19 @@ function displayDivisionQuestion(operand1, operand2) {
 
 }
 
-function startTimer() {
-    const startingSeconds = 30;
-    let time = startingSeconds;
-
-    const countdownEl = document.getElementById('countdown');
-
-    setInterval(updateCountdown, 1000);
-
-    function updateCountdown() {
-        
-        countdownEl.innerHTML = `${time}`;
-
-        if (time < 0) {
-            displayResults();
+function timeLeft(seconds) {
+    console.log("in the timeLeft");
+    let countDown = setInterval(function() {
+        document.getElementById("timer").innerHTML = seconds; //access the timer HTML text to display the number counting down
+        seconds--;
+        if (seconds === -1) {
+            console.log("game over");
         }
-
-        time--;
-    }
+    }, 1000);
 }
 
 function displayResults() {
+    displayResults.style.display = "block";
     let finalCorrect = parseInt(document.getElementById("score").innerText);
     let finalIncorrect = parseInt(document.getElementById("incorrect").innerText);
     console.log(finalCorrect);
@@ -188,5 +182,11 @@ function displayResults() {
     document.getElementById("final-score").innerHTML = finalCorrect;
     document.getElementById("final-incorrect").innerHTML = finalIncorrect;
     alert("game ended!");
+    reset();
+
+}
+
+function reset() {
+
 
 }

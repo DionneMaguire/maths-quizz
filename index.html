@@ -18,12 +18,15 @@
         <img class="logo" src="assets/images/maths-quizz-logo.webp" alt="logo"> Maths Quiz
     </h1>
     <div class="game-area">
-        <div class="timer">
-            <p>How many questions can you answer in 30 seconds?</p>
-            <span id="countdown">30</span>
-            <span>seconds</span>
+        <div class="intro-controls">
+            <div class="intro">
+                <h2>How many questions can you answer in 30 seconds?</h2>
+                <button class="start">Start Quiz!</button>
+            </div>
         </div>
-
+        <div class="timer">
+            <p id="time-left">Time Left:<span id="timer">30</span></p>
+        </div>
         <div class="question-area">
             <span id="operand1">0</span>
             <span id="operator">x</span>
@@ -47,7 +50,8 @@
     </div>
 
     <div class="results">
-        <p>Great try, you managed <span id="final-score">0</span> correct answers and <span id="final-incorrect">0</span> incorrect answers in 30 seconds</p>
+        <p>Great try, you managed <span id="final-score">0</span> correct answers and <span
+                id="final-incorrect">0</span> incorrect answers in 30 seconds</p>
     </div>
 
     <script src="assets/js/script.js"></script>
