@@ -104,12 +104,12 @@ body {
     color: black;
 }
 
-#results-control {
+.results-control {
     display: flex;
     justify-content: space-evenly;
 }
 
-#results {
+.results {
     /* hidden by default*/
     display: none;
     background-color: rgba(241, 9, 9, 0.8);
