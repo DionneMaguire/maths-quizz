@@ -125,9 +125,30 @@ body {
 
 /* ------- Media queries */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .question-area {
         width: 75%;
+    }
+    .game-area {
+        font-size: 1rem;
+    }
+    .score-area {
+        font-size: 1rem;
+    }
+    .button {
+        font-size: 1rem;
+    }
+    .intro {
+        width: 75vw;
+    }
+    #answer-box {
+        font-size: 1rem;
+    }
+    .results {
+        width: 75vw;
+    }
+    .scores {
+        padding: 10px;
     }
 }
 
