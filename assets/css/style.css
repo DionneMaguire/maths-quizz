@@ -113,8 +113,9 @@ body {
     /* hidden by default*/
     display: none;
     background-color: rgba(241, 9, 9, 0.8);
+    padding-top: 100px;
     position: fixed;
-    z-index: 99;
+    z-index: 3;
     width: 50vw;
     height: 50vh;
 }

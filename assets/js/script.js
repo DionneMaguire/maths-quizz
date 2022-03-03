@@ -1,6 +1,6 @@
 //* wait for the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function () {
-    // 
+    // when user clicks on start quiz
     let start = document.getElementById("start");
     let intro = document.getElementById("intro");
     start.addEventListener("click", function() {
@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
     runGame("addition");
+
+    //when the user hits the retry button
+    let retry = document.getElementById("retry");
+    retry.addEventListener("click", function() {
+        reset();
+    })
 })
 /**
  * the main game "loop", called when the script is first loaded
@@ -189,12 +195,18 @@ function displayResults() {
     document.getElementById("final-score").innerHTML = finalCorrect;
     document.getElementById("final-incorrect").innerHTML = finalIncorrect;
     results.style.display = "block";
-    
-    reset();
 
 }
-
+/** 
+ * resets scores to zero, timer to 30, hides result modal and shows intro modal
+ */
 function reset() {
-
+    parseInt(document.getElementById("score").innerText) = 0;
+    parseInt(document.getElementById("incorrect").innerText) = 0;
+    document.getElementById("timer").innerHTML = 30;
+    let results = document.getElementById("results");
+    results.style.display = "none";
+    let intro = document.getElementById("intro");
+    intro.style.display = "block";
 
 }
