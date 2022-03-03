@@ -201,12 +201,12 @@ function displayResults() {
  * resets scores to zero, timer to 30, hides result modal and shows intro modal
  */
 function reset() {
-    parseInt(document.getElementById("score").innerText) = 0;
-    parseInt(document.getElementById("incorrect").innerText) = 0;
+    console.log("in reset");
+    document.getElementById("score").innerText = 0;
+    document.getElementById("incorrect").innerText = 0;
     document.getElementById("timer").innerHTML = 30;
-    let results = document.getElementById("results");
-    results.style.display = "none";
-    let intro = document.getElementById("intro");
-    intro.style.display = "block";
-
+    // set results modal to hide
+    document.getElementById("results").style.display = "none";
+    // set intro modal to show
+    document.getElementById("intro").style.display = "block";
 }
