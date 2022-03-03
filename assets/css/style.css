@@ -97,7 +97,9 @@ body {
     display: inline-block;
     height: 40px;
     width: 80px;
-/*    font-size: 1.2rem;*/
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
 }
 
 .scores {
