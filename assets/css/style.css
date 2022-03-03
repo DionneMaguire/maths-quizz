@@ -32,7 +32,7 @@ body {
 }
 
 .button {
-    width: 220px;
+    width: 20vw;
     height: 60px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -115,7 +115,7 @@ body {
 .results {
     /* hidden by default*/
     display: none;
-    background-color: rgb(241, 9, 9);
+    background-color: rgb(8, 221, 61);
     padding-top: 100px;
     position: fixed;
     z-index: 3;

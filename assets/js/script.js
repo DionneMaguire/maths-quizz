@@ -6,12 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     start.addEventListener("click", function() {
         intro.style.display = "none";
         startTime();
+    //that the cursor will be in the answer box when page is loaded
         document.getElementById("answer-box").focus();
 
     });
-    //that the cursor will be in the answer box when page is loaded
-
-    
     
     // when user hits the submit answer button it will check answer
     let answer = document.getElementById("answer-button");
