@@ -61,7 +61,6 @@ body {
 
 .question-area {
     width: 50%;
-/*    font-size: 2rem;*/
     margin: auto;
     padding: 100px 0;
 }
@@ -88,7 +87,6 @@ body {
 
 .answer-message {
     display: none;
-/*    font-size: 1rem;*/
 }
 
 #answer-box {
@@ -126,31 +124,31 @@ body {
 /* ------- Media queries */
 
 @media (max-width: 850px) {
-    .question-area {
-        width: 75%;
-    }
     .game-area {
-        font-size: 1rem;
-    }
-    .score-area {
         font-size: 1rem;
     }
     .button {
         font-size: 1rem;
-    }
+    } 
     .intro {
         width: 75vw;
+    }
+    .question-area {
+        width: 75%;
+    }
+    .score-area {
+        font-size: 1rem;
     }
     #answer-box {
         font-size: 1rem;
     }
+    .scores {
+        padding: 10px;
+    }    
     .results {
         width: 75vw;
         height: 55vh;
-    }
-    .scores {
-        padding: 10px;
-    }
+    }    
 }
 
 @media (max-width: 520px) {
