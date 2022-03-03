@@ -4,6 +4,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: rgb(10, 10, 10);
     text-align: center;
+    font-size: 2rem;
 }
 
 /*------Heading */
@@ -30,6 +31,17 @@ body {
     padding: 1%;
 }
 
+.button {
+    width: 220px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 /*-----intro box with button for start quiz---*/
 .intro-controls {
     display: flex;
@@ -42,16 +54,14 @@ body {
     /* sit on top */
     z-index: 3;
     padding-top: 100px;
-/*    left: 0;
-    top: 0;*/
     width: 50vw;
     height: 50vh;
-    background-color: rgba(241, 9, 9, 0.8);
+    background-color: rgb(241, 9, 9);
 }
 
 .question-area {
     width: 50%;
-    font-size: 2rem;
+/*    font-size: 2rem;*/
     margin: auto;
     padding: 100px 0;
 }
@@ -78,7 +88,7 @@ body {
 
 .answer-message {
     display: none;
-    font-size: 1rem;
+/*    font-size: 1rem;*/
 }
 
 #answer-box {
@@ -87,21 +97,12 @@ body {
     display: inline-block;
     height: 40px;
     width: 80px;
-    font-size: 1.2rem;
+/*    font-size: 1.2rem;*/
 }
 
 .scores {
     display: inline-block;
     padding: 25px;
-}
-
-.answer-button {
-    width: 220px;
-    height: 60px;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: black;
 }
 
 .results-control {
@@ -112,7 +113,7 @@ body {
 .results {
     /* hidden by default*/
     display: none;
-    background-color: rgba(241, 9, 9, 0.8);
+    background-color: rgb(241, 9, 9);
     padding-top: 100px;
     position: fixed;
     z-index: 3;
