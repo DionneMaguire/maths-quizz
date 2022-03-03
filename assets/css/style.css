@@ -146,6 +146,7 @@ body {
     }
     .results {
         width: 75vw;
+        height: 55vh;
     }
     .scores {
         padding: 10px;
