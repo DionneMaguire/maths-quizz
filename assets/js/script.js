@@ -6,17 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
     start.addEventListener("click", function() {
         intro.style.display = "none";
         startTime();
+        document.getElementById("answer-box").focus();
 
-    })
+    });
     //that the cursor will be in the answer box when page is loaded
 
-    document.getElementById("answer-box").focus();
+    
     
     // when user hits the submit answer button it will check answer
     let answer = document.getElementById("answer-button");
     answer.addEventListener("click", function () {
         checkAnswer();
-    })
+    });
 
     // if the user hits enter it will check answer
 
@@ -24,15 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.key === "Enter") {
             checkAnswer();
         }
-    })
+    });
     runGame("addition");
 
     //when the user hits the retry button
     let retry = document.getElementById("retry");
     retry.addEventListener("click", function() {
         reset();
-    })
-})
+    });
+});
 /**
  * the main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
