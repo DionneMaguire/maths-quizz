@@ -1,6 +1,6 @@
 # Maths Quiz
 
-This is a maths quiz, for anyone over the age of nine as there is addition, subtraction, multiplication and division questions.  The challenge is to answer the most correct answers within the time of 30 seconds. The user can retake the quiz over and over to improve their mathematic skills!  This is a useful for people of all ages to improve their mental arithmetic.
+This is a maths quiz, for anyone over the age of nine as there is addition, subtraction, multiplication and division questions.  The challenge is to answer the most correct answers within the time of 30 seconds. The user can retake the quiz over and over to improve their mathematic skills!  This is a useful for people of all ages to improve their mental arithmetic. The numbers that are used in each question are randomly choosen and the operator is also randomly choosen.  So each quiz is different.
 
 ![How the quiz looks in different screen sizes](documents/images/Am-I-Responsive_.png)
 
@@ -8,20 +8,28 @@ This is a maths quiz, for anyone over the age of nine as there is addition, subt
 
 ### Title and logo
 
-I have used a very simple logo that shows the 4 operators (+, -, *, /)that are used in the quiz and a simple heading of 'Maths Quiz'.
+I have used a very simple logo that shows the 4 operators (+, -, *, /)that are used in the quiz and a simple title of 'Maths Quiz'. I have added an alt attribute to the logo for screen readers.
 
-![logo and heading](documents/images/)
+![logo and heading](documents/images/logo.webp)
 
 ### Introduction page
 
 The first screen the user sees is the introduction modal. This very simple asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red backgorund and black text so that it is bold and easy to read.
 
-![introduction screen](documents/images/)
+![introduction screen](documents/images/intro.webp)
 
 ### Game Area
-![](documents/images/)
+
+I have kept the game screen very simple.  The logo and title are at the top.  There is a countdown timer so that the user can see how much time is left.  There is a question area that displays the question and an answer box for the user to enter the answer.  I have labelled my answer box with answer for any screen readers. There is a submit answer button for the user to click when they have entered their answer.  At the bottom I have the number of correct answers and the number of incorrect answers, these figures are updated after each question has been answered.
+Again the submit button changes to a darker color when the  mouse is hovering over it.
+
+![game area](documents/images/question-area.webp)
+
 ### Result Page
-![](documents/images/)
+
+When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds.  There is a Try again button that they can press to retake the quiz.  as with the other buttons the color darkens when the users mouse hovers over the button.
+
+![results screen](documents/images/results.webp)
 
 ## Testing
 
@@ -31,7 +39,7 @@ No errors were returned when code passed through W3C Validator for css.
 No errors were returned when code passed through JSHint for javascript.
 Accessibility - I ran it through lighthouse in devtools and got the following results:
 
-![Lighthouse results](document/images/)
+![Lighthouse results](document/images/accessibility.webp)
 
 ### Manual Testing
 - I tested you cannot enter anything else but a number.
@@ -43,6 +51,7 @@ Accessibility - I ran it through lighthouse in devtools and got the following re
 
 ### Bugs and fixes
 
+Initially my timer was counting down and not stopping at zero.  I added the clearInterval function to fix this issue.
 When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
 
 ## Deployment
@@ -105,3 +114,5 @@ I used W3Schools for the modal screens as well as some youtube videos.
 I used https://ciaraosull.github.io/project-2-whack-a-mole/index.html to help understand modals and timers.
 I used slack to understand and code the timer.
 I used cork-swap/README to complete the forking and cloning ine deployment section.
+I used cloud converter to convert my images from png to webp.
+I used tinyPNG to compress all images.
