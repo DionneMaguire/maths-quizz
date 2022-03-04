@@ -40,6 +40,11 @@ body {
     font-family: "Montserrat",sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+    background-color: rgb(87, 195, 238);
+}
+
+.button:hover {
+    background-color:blue;
 }
 
 /*-----intro box with button for start quiz---*/
