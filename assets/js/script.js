@@ -73,6 +73,9 @@ function runGame(gameType) {
 
 }
 
+/**
+ * sets a timer for 30 seconds and when times up displays results
+ */
 function startTime() {
     //check whether this is first time thru and if it is start the timer
     let seconds = parseInt(document.getElementById("timer").innerHTML);
@@ -80,12 +83,12 @@ function startTime() {
         timeLeft(seconds);
     }
     setTimeout(function() {
-        console.log("in timeout");
-        alert("Time's up!");
+/*        alert("Time's up!");*/
         displayResults();
 
     }, 30000);
 }
+
 /**
  *Checks the answer against the first element in
  * the returned calculateCorrectAnswer
@@ -97,10 +100,10 @@ function checkAnswer() {
     let isCorrect = userAnswer === calculatedAnswer[0];
 
     if (isCorrect) {
-        alert("Hey! You got it right :D!");
+/*        alert("Hey! You got it right :D!");*/
         incrementScore();
     } else {
-        alert(`Awww... you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
+/*        alert(`Awww... you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);*/
         incrementWrongAnswer();
     }
     runGame(calculatedAnswer[1]);
@@ -149,34 +152,46 @@ function incrementWrongAnswer() {
 
 }
 
+/**
+ * Displays the addition question
+ */
 function displayAdditionQuestion(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "+";
 }
 
+/**
+ * Displays the subtraction question
+ */
 function displaySubtractQuestion(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
     document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
     document.getElementById('operator').textContent = "-";
-
 }
 
+/**
+ * Displays the multipliaction question
+ */
 function displayMultiplyQuestion(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "*";
 }
 
+/**
+ * Displays the division question
+ */
 function displayDivisionQuestion(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1 * operand2; 
     document.getElementById('operand2').textContent = operand1;
     document.getElementById('operator').textContent = "/";
-
 }
 
+/**
+ * returns the time remaining
+ */
 function timeLeft(seconds) {
-    console.log("in the timeLeft");
     let countDown = setInterval(function() {
         document.getElementById("timer").innerHTML = seconds; //access the timer HTML text to display the number counting down
         seconds--;
@@ -187,8 +202,11 @@ function timeLeft(seconds) {
     }, 1000);
 }
 
+/**
+ * When time is up, results modal is shown with how many correct and incorrect answers
+ * in the 30 seconds
+ */
 function displayResults() {
-    console.log("in display results");
     let results = document.getElementById("results");
     
     let finalCorrect = parseInt(document.getElementById("score").innerText);

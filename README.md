@@ -2,7 +2,7 @@
 
 This is a maths quiz, for anyone over the age of nine as there is addition, subtraction, multiplication and division questions.  The challenge is to answer the most correct answers within the time of 30 seconds. The user can retake the quiz over and over to improve their mathematic skills!  This is a useful for people of all ages to improve their mental arithmetic.
 
-![How the quiz looks in different screen sizes](documents/images/Am I Responsive_.png)
+![How the quiz looks in different screen sizes](documents/images/Am-I-Responsive_.png)
 
 ## Features
 
