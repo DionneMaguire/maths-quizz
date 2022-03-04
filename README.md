@@ -6,11 +6,18 @@ This is a maths quiz, for anyone over the age of nine as there is addition, subt
 
 ## Features
 
-
 ### Title and logo
-![](documents/images/)
+
+I have used a very simple logo that shows the 4 operators (+, -, *, /)that are used in the quiz and a simple heading of 'Maths Quiz'.
+
+![logo and heading](documents/images/)
+
 ### Introduction page
-![](documents/images/)
+
+The first screen the user sees is the introduction modal. This very simple asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red backgorund and black text so that it is bold and easy to read.
+
+![introduction screen](documents/images/)
+
 ### Game Area
 ![](documents/images/)
 ### Result Page
