@@ -2,7 +2,7 @@
 
 This is a maths quiz, for anyone over the age of nine as there is addition, subtraction, multiplication and division questions.  The challenge is to answer the most correct answers within the time of 30 seconds. The user can retake the quiz over and over to improve their mathematic skills!  This is a useful for people of all ages to improve their mental arithmetic. The numbers that are used in each question are randomly choosen and the operator is also randomly choosen.  So each quiz is different.
 
-![How the quiz looks in different screen sizes](documents/images/Am-I-Responsive_.png)
+![How the quiz looks in different screen sizes](documents/images/Am-I-Responsive.webp)
 
 ## Features
 
@@ -27,21 +27,23 @@ Again the submit button changes to a darker color when the  mouse is hovering ov
 
 ### Result Page
 
-When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds.  There is a Try again button that they can press to retake the quiz.  as with the other buttons the color darkens when the users mouse hovers over the button.
+When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds.  There is a Try again button that the user can press to retake the quiz.  As with the other buttons the color darkens when the users mouse hovers over the button.
 
 ![results screen](documents/images/results.webp)
 
 ## Testing
 
 ### Validator Testing
+
 No errors were returned when code passed through W3C Validator for HTML.
 No errors were returned when code passed through W3C Validator for css.
 No errors were returned when code passed through JSHint for javascript.
 Accessibility - I ran it through lighthouse in devtools and got the following results:
 
-![Lighthouse results](document/images/accessibility.webp)
+![Lighthouse results](documents/images/accessibility.webp)
 
 ### Manual Testing
+
 - I tested you cannot enter anything else but a number.
 - 
 - I tested all the above on the development site and the fully deployed site.
@@ -106,7 +108,7 @@ To make a local clone of the project can be done as follows:
 
 
 ## Credits
-I used Love Maths to help me structure my quizz.
+I used Love Maths walk through project to help me structure my quizz.
 I used google fonts for Montserrat.
 I applied getting a random number to then get a random operator for each question.
 I used educative.io to understand timers as well as W3Schools.
