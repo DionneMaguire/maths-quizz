@@ -36,8 +36,17 @@ When the timer reaches zero the results page shows with how many correct answers
 ### Validator Testing
 
 - No errors were returned when code passed through W3C Validator for HTML.
+
+![html validator](documnets/images/html-validator.png)
+
 - No errors were returned when code passed through W3C Validator for css.
+
+![css validator](documnets/images/css-validator.png)
+
 - No errors were returned when code passed through JSHint for javascript.
+
+![jshint](documnets/images/JSHint.png)
+
 - Accessibility - I ran it through lighthouse in devtools and got the following results:
 
 ![Lighthouse results](documents/images/accessibility.webp)
