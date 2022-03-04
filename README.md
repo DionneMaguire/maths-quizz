@@ -27,7 +27,7 @@ Again the submit button changes to a darker color when the  mouse is hovering ov
 
 ### Result Page
 
-When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds.  There is a Try again button that the user can press to retake the quiz.  As with the other buttons the color darkens when the users mouse hovers over the button.
+When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds. I have the number of correct answers and incorrect answers in a differnet color so that it is easy to read for the user. There is a 'Try again' button that the user can press to retake the quiz.  As with the other buttons the color darkens when the users mouse hovers over the button.
 
 ![results screen](documents/images/results.webp)
 
@@ -35,16 +35,16 @@ When the timer reaches zero the results page shows with how many correct answers
 
 ### Validator Testing
 
-No errors were returned when code passed through W3C Validator for HTML.
-No errors were returned when code passed through W3C Validator for css.
-No errors were returned when code passed through JSHint for javascript.
-Accessibility - I ran it through lighthouse in devtools and got the following results:
+- No errors were returned when code passed through W3C Validator for HTML.
+- No errors were returned when code passed through W3C Validator for css.
+- No errors were returned when code passed through JSHint for javascript.
+- Accessibility - I ran it through lighthouse in devtools and got the following results:
 
 ![Lighthouse results](documents/images/accessibility.webp)
 
 ### Manual Testing
 
-- I tested you cannot enter anything else but a number.
+- I tested you cannot enter anything else other than a number, as the answer box has a type=number. 
 - 
 - I tested all the above on the development site and the fully deployed site.
 - I tested that my website worked on different browsers - Google Chrome, Safari, Microsoft Edge, Mozilla Firefox.
@@ -53,8 +53,8 @@ Accessibility - I ran it through lighthouse in devtools and got the following re
 
 ### Bugs and fixes
 
-Initially my timer was counting down and not stopping at zero.  I added the clearInterval function to fix this issue.
-When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
+- Initially my timer was counting down and not stopping at zero.  I added the clearInterval function to fix this issue.
+- When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
 
 ## Deployment
 
