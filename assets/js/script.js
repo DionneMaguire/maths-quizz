@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         startTime();
     //that the cursor will be in the answer box when page is loaded
         document.getElementById("answer-box").focus();
+    //ensure that the answer box is empty
+        document.getElementById("answer-box").value = "";
 
     });
     

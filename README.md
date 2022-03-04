@@ -36,6 +36,8 @@ Accessibility - I ran it through lighthouse in devtools and got the following re
 
 ### Bugs and fixes
 
+When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
+
 ## Deployment
 
 This site was deployed to GitHub pages. The steps to deploy are as follows:
