@@ -121,14 +121,22 @@ body {
     height: 50vh;
 }
 
+#final-score {
+    color:rgb(32, 9, 241);
+}
+
+#final-incorrect {
+    color:crimson;
+}
+
 /* ------- Media queries */
 
 @media (max-width: 850px) {
     .game-area {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .button {
-        font-size: 1rem;
+        font-size: 1.5rem;
         width: 30vw;
     } 
     .intro {
@@ -142,7 +150,7 @@ body {
         font-size: 1rem;
     }
     #answer-box {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .scores {
         padding: 10px;
@@ -155,7 +163,7 @@ body {
 
 @media (max-width: 600px) {
     .game-area {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .button {
         font-size: 0.8rem;
@@ -163,11 +171,9 @@ body {
     .question-area {
         width: 100%;
     }
-    .score-area {
-        font-size: 0.8rem;
-    }
+    
     #answer-box {
-        font-size: 0.8rem;
+        font-size: 1rem;
         height: 30px;
         width: 40px;
     }

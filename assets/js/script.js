@@ -83,7 +83,6 @@ function startTime() {
         timeLeft(seconds);
     }
     setTimeout(function() {
-/*        alert("Time's up!");*/
         displayResults();
 
     }, 30000);
@@ -140,7 +139,6 @@ function calculateCorrectAnswer() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-
 }
 
 /**
@@ -149,7 +147,6 @@ function incrementScore() {
 function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-
 }
 
 /**
@@ -196,7 +193,6 @@ function timeLeft(seconds) {
         document.getElementById("timer").innerHTML = seconds; //access the timer HTML text to display the number counting down
         seconds--;
         if (seconds === -1) {
-            console.log("game over");
             clearInterval(countDown);
         }
     }, 1000);
@@ -211,8 +207,6 @@ function displayResults() {
     
     let finalCorrect = parseInt(document.getElementById("score").innerText);
     let finalIncorrect = parseInt(document.getElementById("incorrect").innerText);
-    console.log(finalCorrect);
-    console.log(finalIncorrect);
     document.getElementById("final-score").innerHTML = finalCorrect;
     document.getElementById("final-incorrect").innerHTML = finalIncorrect;
     results.style.display = "block";
