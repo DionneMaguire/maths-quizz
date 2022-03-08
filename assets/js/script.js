@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let start = document.getElementById("start");
     let intro = document.getElementById("intro");
     start.addEventListener("click", function() {
+
         intro.style.display = "none";
         startTime();
     //that the cursor will be in the answer box when page is loaded

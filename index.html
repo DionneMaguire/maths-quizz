@@ -10,6 +10,7 @@
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/maths-quiz-favicon.png" type="image/x-icon">
     <title>Maths Quiz</title>
 </head>
 
@@ -21,14 +22,15 @@
         <div class="intro-controls">
             <div class="intro" id="intro">
                 <h2>How many questions can you answer in 30 seconds?</h2>
+                    
                 <button id="start" class="button">Start Quiz!</button>
             </div>
         </div>
         <div class="results-control">
             <div class="results" id="results">
                 <h2>Great try!</h2>
-                <p>You got <span id="final-score">0</span> correct answers<br> and <span
-                    id="final-incorrect">0</span> incorrect answers<br> in 30 seconds</p>
+                <p>You got <span id="final-score">0</span> correct answers<br> and <span id="final-incorrect">0</span>
+                    incorrect answers<br> in 30 seconds</p>
                 <button id="retry" class="button">Try Again!</button>
             </div>
         </div>
@@ -36,7 +38,7 @@
             <p id="time-left">Time Left:<span id="timer">30</span></p>
         </div>
         <div class="question-area">
-            
+
             <span id="operand1">0</span>
             <span id="operator">x</span>
             <span id="operand2">0</span>
@@ -49,7 +51,7 @@
         </div>
 
         <button data-type="submit" id="answer-button" class="button">Submit Answer</button>
-        
+
 
     </div>
 
@@ -58,7 +60,7 @@
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
 
     </div>
-    
+
 
     <script src="assets/js/script.js"></script>
 </body>
