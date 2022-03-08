@@ -125,14 +125,14 @@ To make a local clone of the project can be done as follows:
 
 
 ## Credits
-I used Love Maths walk through project to help me structure my quiz.
-I used google fonts for Montserrat.
-I applied getting a random number to then get a random operator for each question.
-I used educative.io to understand timers as well as W3Schools.
-I used W3Schools for the modal screens as well as some youtube videos.
-I used https://ciaraosull.github.io/project-2-whack-a-mole/index.html to help understand modals and timers.
-I used slack to understand and code the timer.
-I used cork-swap/README to complete the forking and cloning in the deployment section.
-I used cloud converter to convert my images from png to webp.
-I used tinyPNG to compress all images.
-I got great help and tips from my msletb-nov-2021 chort, our facilitator and my mentor Okwudiri Okoro. 
+- I used Love Maths walk through project to help me structure my quiz.
+- I used google fonts for Montserrat.
+- I applied getting a random number to then get a random operator for each question.
+- I used educative.io to understand timers as well as W3Schools.
+- I used W3Schools for the modal screens as well as some youtube videos.
+- I used https://ciaraosull.github.io/project-2-whack-a-mole/index.html to help understand modals and timers.
+- I used slack to understand and code the timer.
+- I used cork-swap/README to complete the forking and cloning in the deployment section.
+- I used cloud converter to convert my images from png to webp.
+- I used tinyPNG to compress all images.
+- I got great help and tips from my msletb-nov-2021 chort, our facilitator and my mentor Okwudiri Okoro. 

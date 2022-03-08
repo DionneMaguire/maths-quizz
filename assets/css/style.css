@@ -19,7 +19,8 @@ body {
 }
 
 /*------Game layout */
-.game-area {
+
+.main {    
     background-color: rgba(189, 218, 235, 0.2);
     box-sizing: border-box;
     width: 85%;
@@ -41,6 +42,7 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     background-color: rgb(87, 195, 238);
+    margin-top: 20px;
 }
 
 .button:hover {
@@ -59,15 +61,7 @@ body {
     /* sit on top */
     z-index: 3;
     padding-top: 100px;
-    width: 50vw;
-    height: 55vh;
     background-color: rgb(241, 9, 9);
-}
-
-.question-area {
-    width: 50%;
-    margin: auto;
-    padding: 100px 0;
 }
 
 .question-area span {
@@ -75,7 +69,7 @@ body {
 }
 
 .score-area {
-    margin: 5px auto;
+    margin: 30px auto;
     width: 60%;
     font-size: 1.2rem;
 }
@@ -107,7 +101,7 @@ body {
 
 .scores {
     display: inline-block;
-    padding: 25px;
+    padding: 10px;
 }
 
 /* result box will appear when 30 seconds timer are up */
@@ -123,8 +117,6 @@ body {
     padding-top: 100px;
     position: fixed;
     z-index: 3;
-    width: 50vw;
-    height: 55vh;
 }
 
 #final-score {
@@ -138,46 +130,32 @@ body {
 /* ------- Media queries */
 
 @media (max-width: 850px) {
-    .game-area {
+    .main {
         font-size: 1.5rem;
+        width: 75vw;
+        height: 55vh;
     }
     .button {
         font-size: 1.5rem;
         width: 30vw;
     } 
-    .intro {
-        width: 75vw;
-        height: 55vh;
-    }
-    .question-area {
-        width: 75%;
-    }
     .score-area {
         font-size: 1rem;
     }
     #answer-box {
         font-size: 1.5rem;
     }
-    .scores {
-        padding: 10px;
-    }    
-    .results {
-        width: 75vw;
-        height: 55vh;
-    }    
 }
 
 @media (max-width: 600px) {
-    .game-area {
+    .main {
         font-size: 1rem;
+        width: 85vw;
+        height: 65vh;
     }
     .button {
         font-size: 0.8rem;
-    } 
-    .question-area {
-        width: 100%;
-    }
-    
+    }     
     #answer-box {
         font-size: 1rem;
         height: 30px;
