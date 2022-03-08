@@ -219,7 +219,6 @@ function displayResults() {
  * resets scores to zero, timer to 30, hides result modal and shows intro modal
  */
 function reset() {
-    console.log("in reset");
     document.getElementById("score").innerText = 0;
     document.getElementById("incorrect").innerText = 0;
     document.getElementById("timer").innerHTML = 30;

@@ -110,6 +110,7 @@ body {
     padding: 25px;
 }
 
+/* result box will appear when 30 seconds timer are up */
 .results-control {
     display: flex;
     justify-content: space-evenly;

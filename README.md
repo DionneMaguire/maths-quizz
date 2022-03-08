@@ -8,19 +8,19 @@ This is a maths quiz, for anyone over the age of nine as there is addition, subt
 
 ### Title and logo
 
-I have used a very simple logo that shows the 4 operators (+, -, *, /)that are used in the quiz and a simple title of 'Maths Quiz'. I have added an alt attribute to the logo for screen readers.
+I have used a very simple logo that shows the 4 operators (+, -, x, ÷)that are used in the quiz and a simple title of 'Maths Quiz'. I have added an alt attribute to the logo for screen readers.  I also used a very simple favicon of MQ with red background and black text.
 
 ![logo and heading](documents/images/logo.webp)
 
 ### Introduction page
 
-The first screen the user sees is the introduction modal. This very simple asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red backgorund and black text so that it is bold and easy to read.
+The first screen the user sees is the introduction modal. This very simple asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red background and black text so that it is bold and easy to read.
 
 ![introduction screen](documents/images/intro.webp)
 
 ### Game Area
 
-I have kept the game screen very simple.  The logo and title are at the top.  There is a countdown timer so that the user can see how much time is left.  There is a question area that displays the question and an answer box for the user to enter the answer.  I have labelled my answer box with answer for any screen readers. There is a submit answer button for the user to click when they have entered their answer.  At the bottom I have the number of correct answers and the number of incorrect answers, these figures are updated after each question has been answered.
+I have kept the game screen very simple.  The logo and title are at the top.  There is a countdown timer so that the user can see how much time is left.  There is a question area that displays the question and an answer box for the user to enter the answer.  I have labelled my answer box with answer for any screen readers. There is a submit answer button for the user to click when they have entered their answer.  The user can also use the enter key to submit their answers.  I have added code so that the answer box is cleared after each question so that the user does not have to clear it before answering the next question.  Also I have set the cursor to be in the answer box to again make it easier for the user. At the bottom I have the number of correct answers and the number of incorrect answers, these figures are updated after each question has been answered.
 Again the submit button changes to a darker color when the  mouse is hovering over it.
 
 ![game area](documents/images/question-area.webp)
@@ -30,6 +30,11 @@ Again the submit button changes to a darker color when the  mouse is hovering ov
 When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds. I have the number of correct answers and incorrect answers in a differnet color so that it is easy to read for the user. There is a 'Try again' button that the user can press to retake the quiz.  As with the other buttons the color darkens when the users mouse hovers over the button.
 
 ![results screen](documents/images/results.webp)
+
+
+### Future features
+
+A future feature would be to get the user to input their name before beginning the quiz and then I could personalise the results page with Well Done Bob! You got....
 
 ## Testing
 
@@ -53,8 +58,11 @@ When the timer reaches zero the results page shows with how many correct answers
 
 ### Manual Testing
 
+- I tested by clicking the start quiz, the user is brought onto the main question area.
 - I tested you cannot enter anything else other than a number, as the answer box has a type=number. 
-- 
+- I tested that you can submit an answer with either the submit button or the enter key.
+- I tested that when the timer goes to zero the results modal is shown with the amount of correct answers and number of incorrect answers.
+- I tested that when the Try again button is pressed the user is brought back to the intro screen to start the quiz again.
 - I tested all the above on the development site and the fully deployed site.
 - I tested that my website worked on different browsers - Google Chrome, Safari, Microsoft Edge, Mozilla Firefox.
 - I tested that my website is responsive, looks good and functions on all standard screen sizes using devtools.
@@ -117,13 +125,14 @@ To make a local clone of the project can be done as follows:
 
 
 ## Credits
-I used Love Maths walk through project to help me structure my quizz.
+I used Love Maths walk through project to help me structure my quiz.
 I used google fonts for Montserrat.
 I applied getting a random number to then get a random operator for each question.
 I used educative.io to understand timers as well as W3Schools.
 I used W3Schools for the modal screens as well as some youtube videos.
 I used https://ciaraosull.github.io/project-2-whack-a-mole/index.html to help understand modals and timers.
 I used slack to understand and code the timer.
-I used cork-swap/README to complete the forking and cloning ine deployment section.
+I used cork-swap/README to complete the forking and cloning in the deployment section.
 I used cloud converter to convert my images from png to webp.
 I used tinyPNG to compress all images.
+I got great help and tips from my msletb-nov-2021 chort, our facilitator and my mentor Okwudiri Okoro. 
