@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // when user hits the submit answer button it will check answer
     let answer = document.getElementById("answer-button");
-    answer.addEventListener("onsubmit", function () {
+    answer.addEventListener("click", function () {
         checkAnswer();
     });
 
