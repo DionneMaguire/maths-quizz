@@ -61,6 +61,10 @@ When the timer reaches zero the results page shows with how many correct answers
 
 - I tested by clicking the start quiz, the user is brought onto the main question area.
 - I tested you cannot enter anything else other than a number, as the answer box has a type=number. 
+- I tested that a warning "Please fill in this field" comes up on the answer box.
+
+![warning message test](documents/images/warning-test.png)
+
 - I tested that you can submit an answer with either the submit button or the enter key.
 - I tested that when the timer goes to zero the results modal is shown with the amount of correct answers and number of incorrect answers.
 - I tested that when the Try again button is pressed the user is brought back to the intro screen to start the quiz again.
