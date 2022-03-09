@@ -98,15 +98,17 @@ function startTime() {
 function checkAnswer() {
     
     let userAnswer = parseInt(document.getElementById("answer-box").value);
-    if (!userAnswer) {
+    if (userAnswer === "") {   
         return;
     }
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
-
+    console.log(isCorrect);
     if (isCorrect) {
+        console.log("isCorrect");
         incrementScore();
     } else {
+        console.log("wrong");
         incrementWrongAnswer();
     }
     runGame(calculatedAnswer[1]);
@@ -141,16 +143,22 @@ function calculateCorrectAnswer() {
  * Gets the current score from the dom and increments it by 1
  */
 function incrementScore() {
+    console.log("in score");
     let oldScore = parseInt(document.getElementById("score").innerText);
+    console.log(oldScore);
     document.getElementById("score").innerText = ++oldScore;
+    console.log(oldScore);
 }
 
 /**
  * Gets the current incorrect score from the dom and increments it by 1
  */
 function incrementWrongAnswer() {
+    console.log("in incorrect");
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    console.log(oldScore);
     document.getElementById("incorrect").innerText = ++oldScore;
+    console.log(oldScore);
 }
 
 /**
