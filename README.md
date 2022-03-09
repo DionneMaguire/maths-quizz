@@ -34,7 +34,8 @@ When the timer reaches zero the results page shows with how many correct answers
 
 ### Future features
 
-A future feature would be to get the user to input their name before beginning the quiz and then I could personalise the results page with Well Done Bob! You got....
+- A future feature would be to get the user to input their name before beginning the quiz and then I could personalise the results page with Well Done Bob! You got....
+- Also I had planned to show a green tick icon if the user got the correct answer and a red x if they got the incorrect answer but I ran out of time.
 
 ## Testing
 
@@ -72,6 +73,8 @@ A future feature would be to get the user to input their name before beginning t
 
 - Initially my timer was counting down and not stopping at zero.  I added the clearInterval function to fix this issue.
 - When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
+- I am getting an intermittent problem, whereby when the user enters their answer sometimes it adds 1 to both correct and incorrect answers.  The code i have changed in the interim should not have affected this.  I have removed the code I have changed and tried again and still the problem persists.  Then I try later and it seems to be working again.  This makes it so difficult to track.
+
 
 ## Deployment
 
