@@ -65,7 +65,8 @@ When the timer reaches zero the results page shows with how many correct answers
 
 ![warning message test](documents/images/warning-test.png)
 
-- I tested that you can submit an answer with either the submit button or the enter key.
+- if the user does not enter an answer and hits enter or submit an alert shows up to warn them that they have not entered a value, if I had more time I would have tried to do this in a nicer way than an alert. 
+- I tested that you can submit an answer with the submit button.
 - I tested that when the timer goes to zero the results modal is shown with the amount of correct answers and number of incorrect answers.
 - I tested that when the Try again button is pressed the user is brought back to the intro screen to start the quiz again.
 - I tested all the above on the development site and the fully deployed site.
@@ -77,7 +78,7 @@ When the timer reaches zero the results page shows with how many correct answers
 
 - Initially my timer was counting down and not stopping at zero.  I added the clearInterval function to fix this issue.
 - When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
-- I am getting an intermittent problem, whereby when the user enters their answer sometimes it adds 1 to both correct and incorrect answers.  The code i have changed in the interim should not have affected this.  I have removed the code I have changed and tried again and still the problem persists.  Then I try later and it seems to be working again.  This makes it so difficult to track.
+- I am getting an intermittent problem, whereby when the user enters their answer sometimes it adds 1 to both correct and incorrect answers.  The code i have changed in the interim should not have affected this.  I have removed the code I have changed and tried again and still the problem persists.  Then I try later and it seems to be working again.  This makes it so difficult to track. i contacted tutor support and they think it was because I wasn't regularly doing hard refreshes.
 
 
 ## Deployment

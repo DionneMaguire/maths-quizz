@@ -17,16 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // when user hits the submit answer button it will check answer
     let answer = document.getElementById("answer-button");
     answer.addEventListener("click", function () {
+        let answerBox = document.getElementById("answer-box").value;
+        if (answerBox == null || answerBox == undefined || answerBox == "") {
+            alert("Hey no value was entered");
+        } else {
         checkAnswer();
+        }
     });
 
-    // if the user hits enter it will check answer
-
-/*    document.getElementById("answer-box").addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-            checkAnswer();
-        }
-    });*/
     runGame("addition");
 
     //when the user hits the retry button
@@ -99,10 +97,6 @@ function checkAnswer() {
     
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     
-    if (userAnswer === "") {
-        return;
-    }
-
     let calculatedAnswer = calculateCorrectAnswer();
     let isCorrect = userAnswer === calculatedAnswer[0];
     if (isCorrect) {
