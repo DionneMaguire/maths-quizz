@@ -69,7 +69,7 @@ body {
 }
 
 .score-area {
-    margin: 30px auto;
+    margin: 10px auto;
     width: 60%;
     font-size: 1.2rem;
 }
@@ -114,7 +114,7 @@ body {
     /* hidden by default*/
     display: none;
     background-color: rgb(8, 221, 61);
-    padding-top: 100px;
+    padding-top: 20px;
     position: fixed;
     z-index: 3;
 }

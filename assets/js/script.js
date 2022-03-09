@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // when user clicks on start quiz
     let start = document.getElementById("start");
     let intro = document.getElementById("intro");
-    start.addEventListener("click", function() {
+    start.addEventListener("click", function () {
 
         intro.style.display = "none";
         startTime();
@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // if the user hits enter it will check answer
 
-    document.getElementById("answer-box").addEventListener("keydown", function(event) {
+/*    document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             checkAnswer();
         }
-    });
+    });*/
     runGame("addition");
 
     //when the user hits the retry button
@@ -98,17 +98,14 @@ function startTime() {
 function checkAnswer() {
     
     let userAnswer = parseInt(document.getElementById("answer-box").value);
-    if (userAnswer === "") {   
-        return;
-    }
+    
     let calculatedAnswer = calculateCorrectAnswer();
+    console.log(userAnswer);
+    console.log(calculatedAnswer[0]);
     let isCorrect = userAnswer === calculatedAnswer[0];
-    console.log(isCorrect);
     if (isCorrect) {
-        console.log("isCorrect");
         incrementScore();
     } else {
-        console.log("wrong");
         incrementWrongAnswer();
     }
     runGame(calculatedAnswer[1]);
