@@ -67,7 +67,7 @@ When the timer reaches zero the results page shows with how many correct answers
 
 - if the user does not enter an answer and hits enter or submit a warning message flashes up for 1 second to tell the user to enter a value.
 
-![pop up warning message](documents/images/flash-warning.png)
+![pop up warning message](documents/images/warning-popup.png)
 
 - I tested that you can submit an answer with the submit button.
 - I tested that when the timer goes to zero the results modal is shown with the amount of correct answers and number of incorrect answers.
