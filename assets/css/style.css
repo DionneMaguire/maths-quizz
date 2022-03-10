@@ -106,6 +106,7 @@ body {
 
 #warning {
     display: none;
+    color: red;
 }
 
 /* result box will appear when 30 seconds timer are up */
