@@ -14,7 +14,7 @@ I have used a very simple logo that shows the 4 operators (+, -, x, ÷)that are 
 
 ### Introduction page
 
-The first screen the user sees is the introduction modal. This very simple asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red background and black text so that it is bold and easy to read.
+The first screen the user sees is the introduction modal. This very simply asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red background and black text so that it is bold and easy to read.
 
 ![introduction screen](documents/images/intro.png)
 
@@ -81,7 +81,7 @@ When the timer reaches zero the results page shows with how many correct answers
 
 - Initially my timer was counting down and not stopping at zero.  I added the clearInterval function to fix this issue.
 - When a user had put a number in the answer box but had not hit enter or submit button the answer box was not being cleared so when the next game began there was a number already in the answer box.  I added code to clear the answer box at the beginning of each game.
-- I am getting an intermittent problem, whereby when the user enters their answer sometimes it adds 1 to both correct and incorrect answers.  The code i have changed in the interim should not have affected this.  I have removed the code I have changed and tried again and still the problem persists.  Then I try later and it seems to be working again.  This makes it so difficult to track. i contacted tutor support and they think it was because I wasn't regularly doing hard refreshes.
+- I was getting an intermittent problem, whereby when the user enters their answer sometimes it adds 1 to both correct and incorrect answers.  The code I had changed in the interim should not have affected this.  I have removed the code I have changed and tried again and still the problem persists.  Then I try later and it seems to be working again.  This makes it so difficult to track. I contacted tutor support and they think it was because I wasn't regularly doing hard refreshes. Since then everyhting has worked correctly.
 
 
 ## Deployment
@@ -108,9 +108,9 @@ Forking the GitHub Repository, so that you can make changes without affecting th
 
 1. Log into your GitHub account
 
-2. Navigate to the repository yu are wanting to fork
+2. Navigate to the repository you are wanting to fork
 
-3. in the upper right of the repository, click the 'Fork' button
+3. In the upper right of the repository, click the 'Fork' button
 
 4. A copy of the repository will now be available within your repositoies
 
@@ -146,4 +146,4 @@ To make a local clone of the project can be done as follows:
 - I used cork-swap/README to complete the forking and cloning in the deployment section.
 - I used cloud converter to convert my images from png to webp.
 - I used tinyPNG to compress all images.
-- I got great help and tips from my msletb-nov-2021 chort, our facilitator and my mentor Okwudiri Okoro. 
+- I got great help and tips from my msletb-nov-2021 cohort, our facilitator and my mentor Okwudiri Okoro. 
