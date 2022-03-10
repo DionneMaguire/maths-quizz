@@ -104,6 +104,10 @@ body {
     padding: 10px;
 }
 
+#warning {
+    display: none;
+}
+
 /* result box will appear when 30 seconds timer are up */
 .results-control {
     display: flex;

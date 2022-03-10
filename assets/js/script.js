@@ -13,13 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("answer-box").value = "";
 
     });
+/* when user hits the submit answer button it will ensure the user has entered 
+   an answer and if not a warning will flash up for 1 second
+   if an answer has been entered we chack the answer
+*/ 
     
-    // when user hits the submit answer button it will check answer
     let answer = document.getElementById("answer-button");
     answer.addEventListener("click", function () {
         let answerBox = document.getElementById("answer-box").value;
         if (answerBox == null || answerBox == undefined || answerBox == "") {
-            alert("Hey no value was entered");
+            document.getElementById("warning").style.display = "block";
+            setTimeout(function() {
+                document.getElementById("warning").style.display = "none";
+            }, 1000);
         } else {
         checkAnswer();
         }

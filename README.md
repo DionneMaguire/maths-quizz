@@ -16,20 +16,20 @@ I have used a very simple logo that shows the 4 operators (+, -, x, ÷)that are 
 
 The first screen the user sees is the introduction modal. This very simple asks the user 'How many questions can you answer in 30 seconds?'.  There is a button to press to start the quiz.  Again very simple and easy for the user.  I have added that the button color goes from pale blue to dark blue when the user hovers over the button.  I have used a red background and black text so that it is bold and easy to read.
 
-![introduction screen](documents/images/intro.webp)
+![introduction screen](documents/images/intro.png)
 
 ### Game Area
 
 I have kept the game screen very simple.  The logo and title are at the top.  There is a countdown timer so that the user can see how much time is left.  There is a question area that displays the question and an answer box for the user to enter the answer.  I have labelled my answer box with answer for any screen readers. There is a submit answer button for the user to click when they have entered their answer.  The user can also use the enter key to submit their answers.  I have added code so that the answer box is cleared after each question so that the user does not have to clear it before answering the next question.  Also I have set the cursor to be in the answer box to again make it easier for the user. At the bottom I have the number of correct answers and the number of incorrect answers, these figures are updated after each question has been answered.
 Again the submit button changes to a darker color when the  mouse is hovering over it.
 
-![game area](documents/images/question-area.webp)
+![game area](documents/images/questions.png)
 
 ### Result Page
 
-When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds. I have the number of correct answers and incorrect answers in a differnet color so that it is easy to read for the user. There is a 'Try again' button that the user can press to retake the quiz.  As with the other buttons the color darkens when the users mouse hovers over the button.
+When the timer reaches zero the results page shows with how many correct answers and how many incorrect answers the user has achieved in the 30 seconds. I have the number of correct answers and incorrect answers in a different color so that it is easy to read for the user. There is a 'Try again' button that the user can press to retake the quiz.  As with the other buttons the color darkens when the users mouse hovers over the button.
 
-![results screen](documents/images/results.webp)
+![results screen](documents/images/results.png)
 
 
 ### Future features
@@ -65,7 +65,7 @@ When the timer reaches zero the results page shows with how many correct answers
 
 ![warning message test](documents/images/warning-test.png)
 
-- if the user does not enter an answer and hits enter or submit an alert shows up to warn them that they have not entered a value, if I had more time I would have tried to do this in a nicer way than an alert. 
+- if the user does not enter an answer and hits enter or submit a warning message flashes up for 1 second to tell the user to enter a value.
 - I tested that you can submit an answer with the submit button.
 - I tested that when the timer goes to zero the results modal is shown with the amount of correct answers and number of incorrect answers.
 - I tested that when the Try again button is pressed the user is brought back to the intro screen to start the quiz again.
